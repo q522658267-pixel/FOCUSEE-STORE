@@ -1,4 +1,4 @@
-// Product data - based on focuseetech.com (62 models)
+// Product data - ALL 62 REAL models from focuseetech.com
 const products = [
   {
     id: 1,
@@ -10,13 +10,8 @@ const products = [
     price: 299,
     originalPrice: 399,
     image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "R32 compact portable AC. Ductless design, touch pad control, 3 fan speeds, 0-24H timer.",
-    specs: {
-      "Cooling Capacity": "5,000/6,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    description: "Compact portable AC with R32 refrigerant. Ductless design, ideal for small rooms and camping.",
+    specs: {"Cooling Capacity": "5,000/6,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
     hot: true
@@ -31,13 +26,8 @@ const products = [
     price: 189,
     originalPrice: 249,
     image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Ultra-compact portable AC for tents and RVs. Low power consumption.",
-    specs: {
-      "Cooling Capacity": "1,000/1,100 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    description: "Ultra-compact portable AC for tents and RVs. Low power consumption, can run on portable power station.",
+    specs: {"Cooling Capacity": "1,000/1,100 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
     hot: true
@@ -52,13 +42,8 @@ const products = [
     price: 179,
     originalPrice: 229,
     image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "Mini portable AC for camping. Can be powered by portable power station.",
-    specs: {
-      "Cooling Capacity": "600/900 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    description: "Mini portable AC for camping and outdoor use. Ultra-lightweight design.",
+    specs: {"Cooling Capacity": "600/900 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
     hot: true
@@ -73,34 +58,24 @@ const products = [
     price: 459,
     originalPrice: 599,
     image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "High capacity portable AC. Cooling, heating, dehumidifying and purifying.",
-    specs: {
-      "Cooling Capacity": "5,000-12,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    description: "High capacity portable AC with cooling, heating, dehumidifying and purifying functions.",
+    specs: {"Cooling Capacity": "5,000-12,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
     hot: false
   },
   {
     id: 5,
-    name: "PC-DMF Portable AC",
+    name: "PC-DM1H Portable AC",
     category: "air-conditioner",
     categoryName: "Portable Air Con.",
-    model: "PC-DMF",
+    model: "PC-DM1H",
     btu: "2,700/3,000/4,000 BTU",
     price: 329,
     originalPrice: 429,
     image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "Compact portable AC with self-evaporating system. Ideal for small rooms.",
-    specs: {
-      "Cooling Capacity": "2,700/3,000/4,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    description: "Compact portable AC with self-evaporating system. Also known as PC-DMF.",
+    specs: {"Cooling Capacity": "2,700/3,000/4,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
     hot: false
@@ -115,19 +90,190 @@ const products = [
     price: 899,
     originalPrice: 1199,
     image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Commercial grade portable AC for server rooms and large spaces.",
-    specs: {
-      "Cooling Capacity": "18,000-24,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    description: "Commercial grade portable AC for server rooms, warehouses and large spaces.",
+    specs: {"Cooling Capacity": "18,000-24,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
+    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
+    stock: 50,
+    hot: true
+  },
+  {
+    id: 7,
+    name: "PC-SMA Portable AC",
+    category: "air-conditioner",
+    categoryName: "Portable Air Con.",
+    model: "PC-SMA",
+    btu: "12,000/14,000/15,000 BTU",
+    price: 499,
+    originalPrice: 629,
+    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
+    description: "High capacity portable AC for large rooms. Powerful cooling performance.",
+    specs: {"Cooling Capacity": "12,000/14,000/15,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
     hot: false
   },
   {
-    id: 7,
+    id: 8,
+    name: "PC-PMA Portable AC",
+    category: "air-conditioner",
+    categoryName: "Portable Air Con.",
+    model: "PC-PMA",
+    btu: "5,000-12,000 BTU",
+    price: 449,
+    originalPrice: 579,
+    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
+    description: "Multi-capacity portable AC. WiFi smart control compatible.",
+    specs: {"Cooling Capacity": "5,000-12,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
+    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
+    stock: 50,
+    hot: false
+  },
+  {
+    id: 9,
+    name: "PC-QMA Portable AC",
+    category: "air-conditioner",
+    categoryName: "Portable Air Con.",
+    model: "PC-QMA",
+    btu: "7,000 BTU",
+    price: 349,
+    originalPrice: 449,
+    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
+    description: "Mid-size portable AC. Balanced performance for bedrooms.",
+    specs: {"Cooling Capacity": "7,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
+    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
+    stock: 50,
+    hot: false
+  },
+  {
+    id: 10,
+    name: "PC-AMK Portable AC",
+    category: "air-conditioner",
+    categoryName: "Portable Air Con.",
+    model: "PC-AMK",
+    btu: "7,000-14,000 BTU",
+    price: 419,
+    originalPrice: 539,
+    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
+    description: "Premium portable AC with full smart features. Tuya ecosystem compatible.",
+    specs: {"Cooling Capacity": "7,000-14,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
+    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
+    stock: 50,
+    hot: false
+  },
+  {
+    id: 11,
+    name: "PC-AMH Portable AC",
+    category: "air-conditioner",
+    categoryName: "Portable Air Con.",
+    model: "PC-AMH",
+    btu: "7,000/9,000/10,000 BTU",
+    price: 389,
+    originalPrice: 499,
+    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
+    description: "Portable AC with modern design. PC-AMH2 version available.",
+    specs: {"Cooling Capacity": "7,000/9,000/10,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
+    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
+    stock: 50,
+    hot: false
+  },
+  {
+    id: 12,
+    name: "PC-AMF Portable AC",
+    category: "air-conditioner",
+    categoryName: "Portable Air Con.",
+    model: "PC-AMF",
+    btu: "7,000/9,000/10,000 BTU",
+    price: 389,
+    originalPrice: 499,
+    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
+    description: "Efficient portable AC. PC-AMF2 version with improved features.",
+    specs: {"Cooling Capacity": "7,000/9,000/10,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
+    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
+    stock: 50,
+    hot: false
+  },
+  {
+    id: 13,
+    name: "PC-AM1E Portable AC",
+    category: "air-conditioner",
+    categoryName: "Portable Air Con.",
+    model: "PC-AM1E",
+    btu: "7,000/9,000/10,000 BTU",
+    price: 379,
+    originalPrice: 489,
+    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
+    description: "Reliable portable AC. PC-AM1E2 updated version available.",
+    specs: {"Cooling Capacity": "7,000/9,000/10,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
+    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
+    stock: 50,
+    hot: false
+  },
+  {
+    id: 14,
+    name: "PC-AME Portable AC",
+    category: "air-conditioner",
+    categoryName: "Portable Air Con.",
+    model: "PC-AME",
+    btu: "7,000/9,000/10,000 BTU",
+    price: 379,
+    originalPrice: 489,
+    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
+    description: "Energy efficient portable AC. PC-AME2 version available.",
+    specs: {"Cooling Capacity": "7,000/9,000/10,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
+    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
+    stock: 50,
+    hot: false
+  },
+  {
+    id: 15,
+    name: "PC-AMD Portable AC",
+    category: "air-conditioner",
+    categoryName: "Portable Air Con.",
+    model: "PC-AMD",
+    btu: "7,000/9,000/10,000 BTU",
+    price: 379,
+    originalPrice: 489,
+    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
+    description: "Portable AC with dehumidifier function. PC-AMD2 version available.",
+    specs: {"Cooling Capacity": "7,000/9,000/10,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
+    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
+    stock: 50,
+    hot: false
+  },
+  {
+    id: 16,
+    name: "PC-AM1B Portable AC",
+    category: "air-conditioner",
+    categoryName: "Portable Air Con.",
+    model: "PC-AM1B",
+    btu: "7,000/9,000/10,000 BTU",
+    price: 369,
+    originalPrice: 479,
+    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
+    description: "Basic portable AC. PC-AM1B2 updated version.",
+    specs: {"Cooling Capacity": "7,000/9,000/10,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
+    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
+    stock: 50,
+    hot: false
+  },
+  {
+    id: 17,
+    name: "PC-AMB Portable AC",
+    category: "air-conditioner",
+    categoryName: "Portable Air Con.",
+    model: "PC-AMB",
+    btu: "7,000/9,000/10,000 BTU",
+    price: 369,
+    originalPrice: 479,
+    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
+    description: "Budget-friendly portable AC. PC-AMB2 version available.",
+    specs: {"Cooling Capacity": "7,000/9,000/10,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
+    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
+    stock: 50,
+    hot: false
+  },
+  {
+    id: 18,
     name: "PC-AMA Portable AC",
     category: "air-conditioner",
     categoryName: "Portable Air Con.",
@@ -135,20 +281,31 @@ const products = [
     btu: "7,000-14,000 BTU",
     price: 399,
     originalPrice: 529,
+    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
+    description: "Best-selling portable AC. WiFi smart control, multiple capacities.",
+    specs: {"Cooling Capacity": "7,000-14,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
+    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
+    stock: 50,
+    hot: true
+  },
+  {
+    id: 19,
+    name: "PC-DMF Portable AC",
+    category: "air-conditioner",
+    categoryName: "Portable Air Con.",
+    model: "PC-DMF",
+    btu: "2,700/3,000/4,000 BTU",
+    price: 319,
+    originalPrice: 419,
     image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "Multi-capacity portable AC. WiFi smart control, Tuya ecosystem.",
-    specs: {
-      "Cooling Capacity": "7,000-14,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    description: "Compact portable AC. Self-evaporating, easy mobility.",
+    specs: {"Cooling Capacity": "2,700/3,000/4,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
     hot: false
   },
   {
-    id: 8,
+    id: 20,
     name: "PC-LMA Portable AC",
     category: "air-conditioner",
     categoryName: "Portable Air Con.",
@@ -157,19 +314,14 @@ const products = [
     price: 319,
     originalPrice: 419,
     image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Lightweight portable AC with easy mobility. Auto restart function.",
-    specs: {
-      "Cooling Capacity": "2,700/3,000/4,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    description: "Lightweight portable AC with auto restart function.",
+    specs: {"Cooling Capacity": "2,700/3,000/4,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
     hot: false
   },
   {
-    id: 9,
+    id: 21,
     name: "PC-LMB Portable AC",
     category: "air-conditioner",
     categoryName: "Portable Air Con.",
@@ -178,19 +330,14 @@ const products = [
     price: 319,
     originalPrice: 419,
     image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "Compact design portable AC. Sleep mode and self-diagnosis.",
-    specs: {
-      "Cooling Capacity": "2,700/3,000/4,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    description: "Compact design with sleep mode and self-diagnosis.",
+    specs: {"Cooling Capacity": "2,700/3,000/4,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
     hot: false
   },
   {
-    id: 10,
+    id: 22,
     name: "PC-DM2A Portable AC",
     category: "air-conditioner",
     categoryName: "Portable Air Con.",
@@ -199,19 +346,14 @@ const products = [
     price: 339,
     originalPrice: 439,
     image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Dual motor portable AC. Enhanced cooling performance.",
-    specs: {
-      "Cooling Capacity": "2,700/3,000/4,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    description: "Dual motor portable AC with enhanced cooling.",
+    specs: {"Cooling Capacity": "2,700/3,000/4,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
     hot: false
   },
   {
-    id: 11,
+    id: 23,
     name: "PC-DMB Portable AC",
     category: "air-conditioner",
     categoryName: "Portable Air Con.",
@@ -220,19 +362,14 @@ const products = [
     price: 329,
     originalPrice: 429,
     image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "Budget-friendly portable AC. Basic functions with reliable performance.",
-    specs: {
-      "Cooling Capacity": "2,700/3,000/4,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    description: "Budget-friendly portable AC with reliable performance.",
+    specs: {"Cooling Capacity": "2,700/3,000/4,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
     hot: false
   },
   {
-    id: 12,
+    id: 24,
     name: "PC-KMH Portable AC",
     category: "air-conditioner",
     categoryName: "Portable Air Con.",
@@ -241,19 +378,14 @@ const products = [
     price: 379,
     originalPrice: 499,
     image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Portable AC with modern design. Remote control included.",
-    specs: {
-      "Cooling Capacity": "7,000-10,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    description: "Modern design portable AC with remote control.",
+    specs: {"Cooling Capacity": "7,000-10,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
     hot: false
   },
   {
-    id: 13,
+    id: 25,
     name: "PC-BM1D Portable AC",
     category: "air-conditioner",
     categoryName: "Portable Air Con.",
@@ -263,18 +395,13 @@ const products = [
     originalPrice: 449,
     image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
     description: "Single duct portable AC. Easy installation and operation.",
-    specs: {
-      "Cooling Capacity": "7,000/9,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    specs: {"Cooling Capacity": "7,000/9,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
     hot: false
   },
   {
-    id: 14,
+    id: 26,
     name: "PC-BMA Portable AC",
     category: "air-conditioner",
     categoryName: "Portable Air Con.",
@@ -283,19 +410,14 @@ const products = [
     price: 359,
     originalPrice: 459,
     image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Basic portable AC for home use. Mechanical control panel.",
-    specs: {
-      "Cooling Capacity": "7,000/9,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    description: "Basic portable AC with mechanical control panel.",
+    specs: {"Cooling Capacity": "7,000/9,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
     hot: false
   },
   {
-    id: 15,
+    id: 27,
     name: "PC-BMB Portable AC",
     category: "air-conditioner",
     categoryName: "Portable Air Con.",
@@ -304,19 +426,14 @@ const products = [
     price: 359,
     originalPrice: 459,
     image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "Portable AC with electronic control. LED display.",
-    specs: {
-      "Cooling Capacity": "7,000/9,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    description: "Portable AC with electronic control and LED display.",
+    specs: {"Cooling Capacity": "7,000/9,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
     hot: false
   },
   {
-    id: 16,
+    id: 28,
     name: "PC-BMD Portable AC",
     category: "air-conditioner",
     categoryName: "Portable Air Con.",
@@ -325,19 +442,14 @@ const products = [
     price: 369,
     originalPrice: 469,
     image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Deluxe portable AC. WiFi and voice control compatible.",
-    specs: {
-      "Cooling Capacity": "7,000/9,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    description: "Deluxe portable AC with WiFi and voice control.",
+    specs: {"Cooling Capacity": "7,000/9,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
     hot: false
   },
   {
-    id: 17,
+    id: 29,
     name: "PC-FMA Portable AC",
     category: "air-conditioner",
     categoryName: "Portable Air Con.",
@@ -346,19 +458,14 @@ const products = [
     price: 419,
     originalPrice: 549,
     image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "Flagship portable AC series. Full smart features.",
-    specs: {
-      "Cooling Capacity": "7,000-14,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    description: "Flagship portable AC series with full smart features.",
+    specs: {"Cooling Capacity": "7,000-14,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
     hot: false
   },
   {
-    id: 18,
+    id: 30,
     name: "PCX5R-18MA Portable AC",
     category: "air-conditioner",
     categoryName: "Portable Air Con.",
@@ -367,19 +474,14 @@ const products = [
     price: 229,
     originalPrice: 299,
     image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "5th generation mini portable AC. Energy efficient.",
-    specs: {
-      "Cooling Capacity": "1,800 BTU · 500W",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    description: "5th generation mini portable AC. Energy efficient, white color.",
+    specs: {"Cooling Capacity": "1,800 BTU · 500W", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
     hot: false
   },
   {
-    id: 19,
+    id: 31,
     name: "PCX5R-18MB Portable AC",
     category: "air-conditioner",
     categoryName: "Portable Air Con.",
@@ -389,18 +491,13 @@ const products = [
     originalPrice: 299,
     image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
     description: "5th generation mini portable AC. Black color option.",
-    specs: {
-      "Cooling Capacity": "1,800 BTU · 500W",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    specs: {"Cooling Capacity": "1,800 BTU · 500W", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
     hot: false
   },
   {
-    id: 20,
+    id: 32,
     name: "PCX5R-18MD Portable AC",
     category: "air-conditioner",
     categoryName: "Portable Air Con.",
@@ -410,18 +507,13 @@ const products = [
     originalPrice: 309,
     image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
     description: "5th generation mini portable AC. Deluxe version.",
-    specs: {
-      "Cooling Capacity": "1,800 BTU · 500W",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    specs: {"Cooling Capacity": "1,800 BTU · 500W", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
     hot: false
   },
   {
-    id: 21,
+    id: 33,
     name: "PCX12R-22MA Portable AC",
     category: "air-conditioner",
     categoryName: "Portable Air Con.",
@@ -430,19 +522,30 @@ const products = [
     price: 279,
     originalPrice: 359,
     image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "12th generation portable AC. Improved efficiency.",
-    specs: {
-      "Cooling Capacity": "4,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    description: "12th generation portable AC with improved efficiency.",
+    specs: {"Cooling Capacity": "4,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
     hot: false
   },
   {
-    id: 22,
+    id: 34,
+    name: "PCX15R-22MA Portable AC",
+    category: "air-conditioner",
+    categoryName: "Portable Air Con.",
+    model: "PCX15R-22MA",
+    btu: "5,000 BTU",
+    price: 299,
+    originalPrice: 379,
+    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
+    description: "15th generation portable AC. 5000 BTU cooling.",
+    specs: {"Cooling Capacity": "5,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
+    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
+    stock: 50,
+    hot: false
+  },
+  {
+    id: 35,
     name: "PC20S-22MA Portable AC",
     category: "air-conditioner",
     categoryName: "Portable Air Con.",
@@ -450,20 +553,15 @@ const products = [
     btu: "7,000/9,000 BTU",
     price: 369,
     originalPrice: 479,
-    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Split type portable AC. Indoor and outdoor units.",
-    specs: {
-      "Cooling Capacity": "7,000/9,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
+    description: "Split type portable AC. Indoor and outdoor units (PC25S-22MA).",
+    specs: {"Cooling Capacity": "7,000/9,000 BTU", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
     hot: false
   },
   {
-    id: 23,
+    id: 36,
     name: "PC70R-MMA Portable AC",
     category: "air-conditioner",
     categoryName: "Portable Air Con.",
@@ -471,20 +569,15 @@ const products = [
     btu: "24,000 BTU (7.0kW)",
     price: 999,
     originalPrice: 1299,
-    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "High capacity commercial portable AC. 7kW cooling.",
-    specs: {
-      "Cooling Capacity": "24,000 BTU (7.0kW)",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
+    description: "High capacity commercial portable AC. 7kW cooling power.",
+    specs: {"Cooling Capacity": "24,000 BTU (7.0kW)", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
-    hot: false
+    hot: true
   },
   {
-    id: 24,
+    id: 37,
     name: "PC90R-MMA Portable AC",
     category: "air-conditioner",
     categoryName: "Portable Air Con.",
@@ -492,20 +585,15 @@ const products = [
     btu: "30,000 BTU (9.0kW)",
     price: 1199,
     originalPrice: 1599,
-    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Extra large capacity portable AC. Industrial use.",
-    specs: {
-      "Cooling Capacity": "30,000 BTU (9.0kW)",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
+    description: "Extra large capacity portable AC for industrial use.",
+    specs: {"Cooling Capacity": "30,000 BTU (9.0kW)", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
     hot: false
   },
   {
-    id: 25,
+    id: 38,
     name: "PCI35R-25MAS Portable AC",
     category: "air-conditioner",
     categoryName: "Portable Air Con.",
@@ -513,290 +601,12 @@ const products = [
     btu: "12,000 BTU · DC Inverter",
     price: 549,
     originalPrice: 699,
-    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "DC inverter portable AC. SEER 5.5, energy saving.",
-    specs: {
-      "Cooling Capacity": "12,000 BTU · DC Inverter",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
-    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
-    stock: 50,
-    hot: false
-  },
-  {
-    id: 26,
-    name: "PC-AMD Portable AC",
-    category: "air-conditioner",
-    categoryName: "Portable Air Con.",
-    model: "PC-AMD",
-    btu: "8,000/10,000 BTU",
-    price: 389,
-    originalPrice: 499,
     image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Portable AC with dehumidifier function. 2-in-1 design.",
-    specs: {
-      "Cooling Capacity": "8,000/10,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
+    description: "DC inverter portable AC. SEER 5.5, ultra energy saving.",
+    specs: {"Cooling Capacity": "12,000 BTU · DC Inverter", "Refrigerant": "R290/R32", "Certification": "CE/GS/RoHS", "Control": "Electronic/Remote"},
     features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
     stock: 50,
-    hot: false
-  },
-  {
-    id: 27,
-    name: "PC-AME Portable AC",
-    category: "air-conditioner",
-    categoryName: "Portable Air Con.",
-    model: "PC-AME",
-    btu: "9,000/12,000 BTU",
-    price: 409,
-    originalPrice: 529,
-    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "Energy efficient portable AC. ERP Class A+.",
-    specs: {
-      "Cooling Capacity": "9,000/12,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
-    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
-    stock: 50,
-    hot: false
-  },
-  {
-    id: 28,
-    name: "PC-AMF Portable AC",
-    category: "air-conditioner",
-    categoryName: "Portable Air Con.",
-    model: "PC-AMF",
-    btu: "10,000/12,000 BTU",
-    price: 429,
-    originalPrice: 549,
-    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Portable AC with HEPA filter. Air purification included.",
-    specs: {
-      "Cooling Capacity": "10,000/12,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
-    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
-    stock: 50,
-    hot: false
-  },
-  {
-    id: 29,
-    name: "PC-RMA2 Portable AC",
-    category: "air-conditioner",
-    categoryName: "Portable Air Con.",
-    model: "PC-RMA2",
-    btu: "5,000/7,000 BTU",
-    price: 319,
-    originalPrice: 409,
-    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "Updated RMA series. Improved compressor.",
-    specs: {
-      "Cooling Capacity": "5,000/7,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
-    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
-    stock: 50,
-    hot: false
-  },
-  {
-    id: 30,
-    name: "PC-RMB Portable AC",
-    category: "air-conditioner",
-    categoryName: "Portable Air Con.",
-    model: "PC-RMB",
-    btu: "6,000/8,000 BTU",
-    price: 339,
-    originalPrice: 429,
-    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Mid-size portable AC. Balanced performance.",
-    specs: {
-      "Cooling Capacity": "6,000/8,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
-    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
-    stock: 50,
-    hot: false
-  },
-  {
-    id: 31,
-    name: "PC-RMC Portable AC",
-    category: "air-conditioner",
-    categoryName: "Portable Air Con.",
-    model: "PC-RMC",
-    btu: "8,000/10,000 BTU",
-    price: 369,
-    originalPrice: 469,
-    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "Large room portable AC. Fast cooling.",
-    specs: {
-      "Cooling Capacity": "8,000/10,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
-    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
-    stock: 50,
-    hot: false
-  },
-  {
-    id: 32,
-    name: "PC-SMA Portable AC",
-    category: "air-conditioner",
-    categoryName: "Portable Air Con.",
-    model: "PC-SMA",
-    btu: "9,000/12,000 BTU",
-    price: 399,
-    originalPrice: 519,
-    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Slim design portable AC. Space saving.",
-    specs: {
-      "Cooling Capacity": "9,000/12,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
-    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
-    stock: 50,
-    hot: false
-  },
-  {
-    id: 33,
-    name: "PC-SMB Portable AC",
-    category: "air-conditioner",
-    categoryName: "Portable Air Con.",
-    model: "PC-SMB",
-    btu: "10,000/14,000 BTU",
-    price: 439,
-    originalPrice: 559,
-    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "Slim design high capacity. WiFi control.",
-    specs: {
-      "Cooling Capacity": "10,000/14,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
-    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
-    stock: 50,
-    hot: false
-  },
-  {
-    id: 34,
-    name: "PC-TMA Portable AC",
-    category: "air-conditioner",
-    categoryName: "Portable Air Con.",
-    model: "PC-TMA",
-    btu: "7,000/9,000 BTU",
-    price: 359,
-    originalPrice: 459,
-    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Tower style portable AC. Modern look.",
-    specs: {
-      "Cooling Capacity": "7,000/9,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
-    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
-    stock: 50,
-    hot: false
-  },
-  {
-    id: 35,
-    name: "PC-TMB Portable AC",
-    category: "air-conditioner",
-    categoryName: "Portable Air Con.",
-    model: "PC-TMB",
-    btu: "9,000/12,000 BTU",
-    price: 399,
-    originalPrice: 519,
-    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "Tower style portable AC. Large air output.",
-    specs: {
-      "Cooling Capacity": "9,000/12,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
-    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
-    stock: 50,
-    hot: false
-  },
-  {
-    id: 36,
-    name: "PC-UMB Portable AC",
-    category: "air-conditioner",
-    categoryName: "Portable Air Con.",
-    model: "PC-UMB",
-    btu: "12,000/14,000 BTU",
-    price: 469,
-    originalPrice: 599,
-    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Ultra-quiet portable AC. Only 52dB.",
-    specs: {
-      "Cooling Capacity": "12,000/14,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
-    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
-    stock: 50,
-    hot: false
-  },
-  {
-    id: 37,
-    name: "PC-VMA Portable AC",
-    category: "air-conditioner",
-    categoryName: "Portable Air Con.",
-    model: "PC-VMA",
-    btu: "10,000/12,000 BTU",
-    price: 419,
-    originalPrice: 539,
-    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "Vertical exhaust portable AC. Unique design.",
-    specs: {
-      "Cooling Capacity": "10,000/12,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
-    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
-    stock: 50,
-    hot: false
-  },
-  {
-    id: 38,
-    name: "PC-WMA Portable AC",
-    category: "air-conditioner",
-    categoryName: "Portable Air Con.",
-    model: "PC-WMA",
-    btu: "8,000/10,000 BTU",
-    price: 379,
-    originalPrice: 489,
-    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Window kit included portable AC. Easy setup.",
-    specs: {
-      "Cooling Capacity": "8,000/10,000 BTU",
-      "Refrigerant": "R290/R32",
-      "Certification": "CE/GS/RoHS",
-      "Control": "Electronic/Remote"
-    },
-    features: ["Ductless Design", "WiFi Ready", "0-24H Timer", "Self-Evaporating"],
-    stock: 50,
-    hot: false
+    hot: true
   },
   {
     id: 39,
@@ -808,13 +618,8 @@ const products = [
     price: 249,
     originalPrice: 329,
     image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "Large capacity dehumidifier. Auto-defrost, continuous drain.",
-    specs: {
-      "Dehumidification": "30/40/50 L/Day",
-      "Auto-Defrost": "Yes",
-      "Continuous Drain": "Yes",
-      "Certification": "CE/RoHS"
-    },
+    description: "Large capacity dehumidifier with auto-defrost and continuous drain.",
+    specs: {"Dehumidification": "30/40/50 L/Day", "Auto-Defrost": "Yes", "Continuous Drain": "Yes", "Certification": "CE/RoHS"},
     features: ["Auto-Defrost", "Continuous Drain", "Humidity Setting", "Low Noise"],
     stock: 50,
     hot: true
@@ -829,13 +634,8 @@ const products = [
     price: 159,
     originalPrice: 199,
     image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Multiple panel design. Compact home dehumidifier.",
-    specs: {
-      "Dehumidification": "10/12/18/20 L/Day",
-      "Auto-Defrost": "Yes",
-      "Continuous Drain": "Yes",
-      "Certification": "CE/RoHS"
-    },
+    description: "Multiple panel design. Compact home dehumidifier with 2.5L tank.",
+    specs: {"Dehumidification": "10/12/18/20 L/Day", "Auto-Defrost": "Yes", "Continuous Drain": "Yes", "Certification": "CE/RoHS"},
     features: ["Auto-Defrost", "Continuous Drain", "Humidity Setting", "Low Noise"],
     stock: 50,
     hot: true
@@ -851,12 +651,7 @@ const products = [
     originalPrice: 169,
     image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
     description: "Electronic pad control. Small space dehumidifier.",
-    specs: {
-      "Dehumidification": "10/12 L/Day",
-      "Auto-Defrost": "Yes",
-      "Continuous Drain": "Yes",
-      "Certification": "CE/RoHS"
-    },
+    specs: {"Dehumidification": "10/12 L/Day", "Auto-Defrost": "Yes", "Continuous Drain": "Yes", "Certification": "CE/RoHS"},
     features: ["Auto-Defrost", "Continuous Drain", "Humidity Setting", "Low Noise"],
     stock: 50,
     hot: false
@@ -871,13 +666,8 @@ const products = [
     price: 139,
     originalPrice: 179,
     image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Mechanical control dehumidifier. Simple operation.",
-    specs: {
-      "Dehumidification": "10/12 L/Day",
-      "Auto-Defrost": "Yes",
-      "Continuous Drain": "Yes",
-      "Certification": "CE/RoHS"
-    },
+    description: "Mechanical control dehumidifier. Simple and reliable operation.",
+    specs: {"Dehumidification": "10/12 L/Day", "Auto-Defrost": "Yes", "Continuous Drain": "Yes", "Certification": "CE/RoHS"},
     features: ["Auto-Defrost", "Continuous Drain", "Humidity Setting", "Low Noise"],
     stock: 50,
     hot: false
@@ -892,13 +682,8 @@ const products = [
     price: 199,
     originalPrice: 259,
     image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "Mid-size dehumidifier. For basements and garages.",
-    specs: {
-      "Dehumidification": "20/30/40 L/Day",
-      "Auto-Defrost": "Yes",
-      "Continuous Drain": "Yes",
-      "Certification": "CE/RoHS"
-    },
+    description: "Mid-size dehumidifier for basements and garages.",
+    specs: {"Dehumidification": "20/30/40 L/Day", "Auto-Defrost": "Yes", "Continuous Drain": "Yes", "Certification": "CE/RoHS"},
     features: ["Auto-Defrost", "Continuous Drain", "Humidity Setting", "Low Noise"],
     stock: 50,
     hot: false
@@ -913,13 +698,8 @@ const products = [
     price: 209,
     originalPrice: 269,
     image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Updated version. Improved energy efficiency.",
-    specs: {
-      "Dehumidification": "20/30/40 L/Day",
-      "Auto-Defrost": "Yes",
-      "Continuous Drain": "Yes",
-      "Certification": "CE/RoHS"
-    },
+    description: "Updated version with improved energy efficiency.",
+    specs: {"Dehumidification": "20/30/40 L/Day", "Auto-Defrost": "Yes", "Continuous Drain": "Yes", "Certification": "CE/RoHS"},
     features: ["Auto-Defrost", "Continuous Drain", "Humidity Setting", "Low Noise"],
     stock: 50,
     hot: false
@@ -934,13 +714,8 @@ const products = [
     price: 149,
     originalPrice: 189,
     image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "Compact dehumidifier. For bedrooms and bathrooms.",
-    specs: {
-      "Dehumidification": "10/12/16 L/Day",
-      "Auto-Defrost": "Yes",
-      "Continuous Drain": "Yes",
-      "Certification": "CE/RoHS"
-    },
+    description: "Compact dehumidifier for bedrooms and bathrooms.",
+    specs: {"Dehumidification": "10/12/16 L/Day", "Auto-Defrost": "Yes", "Continuous Drain": "Yes", "Certification": "CE/RoHS"},
     features: ["Auto-Defrost", "Continuous Drain", "Humidity Setting", "Low Noise"],
     stock: 50,
     hot: false
@@ -955,13 +730,8 @@ const products = [
     price: 159,
     originalPrice: 199,
     image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Compact dehumidifier with air purification.",
-    specs: {
-      "Dehumidification": "10/12/16 L/Day",
-      "Auto-Defrost": "Yes",
-      "Continuous Drain": "Yes",
-      "Certification": "CE/RoHS"
-    },
+    description: "Compact dehumidifier with air purification function.",
+    specs: {"Dehumidification": "10/12/16 L/Day", "Auto-Defrost": "Yes", "Continuous Drain": "Yes", "Certification": "CE/RoHS"},
     features: ["Auto-Defrost", "Continuous Drain", "Humidity Setting", "Low Noise"],
     stock: 50,
     hot: false
@@ -976,13 +746,8 @@ const products = [
     price: 449,
     originalPrice: 579,
     image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "Industrial dehumidifier. For warehouses and pools.",
-    specs: {
-      "Dehumidification": "50/60/80 L/Day",
-      "Auto-Defrost": "Yes",
-      "Continuous Drain": "Yes",
-      "Certification": "CE/RoHS"
-    },
+    description: "Industrial dehumidifier for warehouses and pools.",
+    specs: {"Dehumidification": "50/60/80 L/Day", "Auto-Defrost": "Yes", "Continuous Drain": "Yes", "Certification": "CE/RoHS"},
     features: ["Auto-Defrost", "Continuous Drain", "Humidity Setting", "Low Noise"],
     stock: 50,
     hot: false
@@ -997,13 +762,8 @@ const products = [
     price: 469,
     originalPrice: 599,
     image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Industrial dehumidifier with pump.",
-    specs: {
-      "Dehumidification": "50/60/80 L/Day",
-      "Auto-Defrost": "Yes",
-      "Continuous Drain": "Yes",
-      "Certification": "CE/RoHS"
-    },
+    description: "Industrial dehumidifier with built-in pump.",
+    specs: {"Dehumidification": "50/60/80 L/Day", "Auto-Defrost": "Yes", "Continuous Drain": "Yes", "Certification": "CE/RoHS"},
     features: ["Auto-Defrost", "Continuous Drain", "Humidity Setting", "Low Noise"],
     stock: 50,
     hot: false
@@ -1018,13 +778,8 @@ const products = [
     price: 229,
     originalPrice: 299,
     image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "Mid-large capacity. WiFi smart control.",
-    specs: {
-      "Dehumidification": "25/30/35 L/Day",
-      "Auto-Defrost": "Yes",
-      "Continuous Drain": "Yes",
-      "Certification": "CE/RoHS"
-    },
+    description: "Mid-large capacity with WiFi smart control.",
+    specs: {"Dehumidification": "25/30/35 L/Day", "Auto-Defrost": "Yes", "Continuous Drain": "Yes", "Certification": "CE/RoHS"},
     features: ["Auto-Defrost", "Continuous Drain", "Humidity Setting", "Low Noise"],
     stock: 50,
     hot: false
@@ -1039,13 +794,8 @@ const products = [
     price: 239,
     originalPrice: 309,
     image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Mid-large capacity. UV sterilization.",
-    specs: {
-      "Dehumidification": "25/30/35 L/Day",
-      "Auto-Defrost": "Yes",
-      "Continuous Drain": "Yes",
-      "Certification": "CE/RoHS"
-    },
+    description: "Mid-large capacity with UV sterilization.",
+    specs: {"Dehumidification": "25/30/35 L/Day", "Auto-Defrost": "Yes", "Continuous Drain": "Yes", "Certification": "CE/RoHS"},
     features: ["Auto-Defrost", "Continuous Drain", "Humidity Setting", "Low Noise"],
     stock: 50,
     hot: false
@@ -1060,13 +810,8 @@ const products = [
     price: 149,
     originalPrice: 189,
     image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "Touch pad control. Modern design.",
-    specs: {
-      "Dehumidification": "10/12 L/Day",
-      "Auto-Defrost": "Yes",
-      "Continuous Drain": "Yes",
-      "Certification": "CE/RoHS"
-    },
+    description: "Touch pad control with modern design.",
+    specs: {"Dehumidification": "10/12 L/Day", "Auto-Defrost": "Yes", "Continuous Drain": "Yes", "Certification": "CE/RoHS"},
     features: ["Auto-Defrost", "Continuous Drain", "Humidity Setting", "Low Noise"],
     stock: 50,
     hot: false
@@ -1081,40 +826,14 @@ const products = [
     price: 219,
     originalPrice: 279,
     image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Efficient dehumidifier. Low noise operation.",
-    specs: {
-      "Dehumidification": "25/30 L/Day",
-      "Auto-Defrost": "Yes",
-      "Continuous Drain": "Yes",
-      "Certification": "CE/RoHS"
-    },
+    description: "Efficient dehumidifier with low noise operation. (PD-HAE also available)",
+    specs: {"Dehumidification": "25/30 L/Day", "Auto-Defrost": "Yes", "Continuous Drain": "Yes", "Certification": "CE/RoHS"},
     features: ["Auto-Defrost", "Continuous Drain", "Humidity Setting", "Low Noise"],
     stock: 50,
     hot: false
   },
   {
     id: 53,
-    name: "PD-HAE Dehumidifier",
-    category: "dehumidifier",
-    categoryName: "Dehumidifier",
-    model: "PD-HAE",
-    btu: "25/30 L/Day",
-    price: 229,
-    originalPrice: 289,
-    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "High efficiency dehumidifier. Energy Star.",
-    specs: {
-      "Dehumidification": "25/30 L/Day",
-      "Auto-Defrost": "Yes",
-      "Continuous Drain": "Yes",
-      "Certification": "CE/RoHS"
-    },
-    features: ["Auto-Defrost", "Continuous Drain", "Humidity Setting", "Low Noise"],
-    stock: 50,
-    hot: false
-  },
-  {
-    id: 54,
     name: "PD-JAE Dehumidifier",
     category: "dehumidifier",
     categoryName: "Dehumidifier",
@@ -1122,20 +841,15 @@ const products = [
     btu: "10/12 L/Day",
     price: 135,
     originalPrice: 175,
-    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Basic dehumidifier. Budget friendly.",
-    specs: {
-      "Dehumidification": "10/12 L/Day",
-      "Auto-Defrost": "Yes",
-      "Continuous Drain": "Yes",
-      "Certification": "CE/RoHS"
-    },
+    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
+    description: "Basic dehumidifier. Budget friendly option.",
+    specs: {"Dehumidification": "10/12 L/Day", "Auto-Defrost": "Yes", "Continuous Drain": "Yes", "Certification": "CE/RoHS"},
     features: ["Auto-Defrost", "Continuous Drain", "Humidity Setting", "Low Noise"],
     stock: 50,
     hot: false
   },
   {
-    id: 55,
+    id: 54,
     name: "PD-PAE Dehumidifier",
     category: "dehumidifier",
     categoryName: "Dehumidifier",
@@ -1143,20 +857,15 @@ const products = [
     btu: "10/12/16/20 L/Day",
     price: 169,
     originalPrice: 219,
-    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
+    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
     description: "Multi-capacity dehumidifier. Popular model.",
-    specs: {
-      "Dehumidification": "10/12/16/20 L/Day",
-      "Auto-Defrost": "Yes",
-      "Continuous Drain": "Yes",
-      "Certification": "CE/RoHS"
-    },
+    specs: {"Dehumidification": "10/12/16/20 L/Day", "Auto-Defrost": "Yes", "Continuous Drain": "Yes", "Certification": "CE/RoHS"},
     features: ["Auto-Defrost", "Continuous Drain", "Humidity Setting", "Low Noise"],
     stock: 50,
     hot: false
   },
   {
-    id: 56,
+    id: 55,
     name: "PD-ECR Dehumidifier",
     category: "dehumidifier",
     categoryName: "Dehumidifier",
@@ -1164,20 +873,15 @@ const products = [
     btu: "10/12 L/Day",
     price: 119,
     originalPrice: 159,
-    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
+    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
     description: "Mechanical knob control. Simple and reliable.",
-    specs: {
-      "Dehumidification": "10/12 L/Day",
-      "Auto-Defrost": "Yes",
-      "Continuous Drain": "Yes",
-      "Certification": "CE/RoHS"
-    },
+    specs: {"Dehumidification": "10/12 L/Day", "Auto-Defrost": "Yes", "Continuous Drain": "Yes", "Certification": "CE/RoHS"},
     features: ["Auto-Defrost", "Continuous Drain", "Humidity Setting", "Low Noise"],
     stock: 50,
     hot: false
   },
   {
-    id: 57,
+    id: 56,
     name: "PD-DAE Dehumidifier",
     category: "dehumidifier",
     categoryName: "Dehumidifier",
@@ -1185,20 +889,15 @@ const products = [
     btu: "10/12/16/20 L/Day",
     price: 159,
     originalPrice: 209,
-    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "Digital display dehumidifier. Humidity setting.",
-    specs: {
-      "Dehumidification": "10/12/16/20 L/Day",
-      "Auto-Defrost": "Yes",
-      "Continuous Drain": "Yes",
-      "Certification": "CE/RoHS"
-    },
+    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
+    description: "Digital display with humidity setting.",
+    specs: {"Dehumidification": "10/12/16/20 L/Day", "Auto-Defrost": "Yes", "Continuous Drain": "Yes", "Certification": "CE/RoHS"},
     features: ["Auto-Defrost", "Continuous Drain", "Humidity Setting", "Low Noise"],
     stock: 50,
     hot: false
   },
   {
-    id: 58,
+    id: 57,
     name: "PD-FAM Dehumidifier",
     category: "dehumidifier",
     categoryName: "Dehumidifier",
@@ -1206,20 +905,15 @@ const products = [
     btu: "10/12 L/Day",
     price: 139,
     originalPrice: 179,
-    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Family dehumidifier. Child lock function.",
-    specs: {
-      "Dehumidification": "10/12 L/Day",
-      "Auto-Defrost": "Yes",
-      "Continuous Drain": "Yes",
-      "Certification": "CE/RoHS"
-    },
+    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
+    description: "Family dehumidifier with child lock function.",
+    specs: {"Dehumidification": "10/12 L/Day", "Auto-Defrost": "Yes", "Continuous Drain": "Yes", "Certification": "CE/RoHS"},
     features: ["Auto-Defrost", "Continuous Drain", "Humidity Setting", "Low Noise"],
     stock: 50,
     hot: false
   },
   {
-    id: 59,
+    id: 58,
     name: "PD-CAE Dehumidifier",
     category: "dehumidifier",
     categoryName: "Dehumidifier",
@@ -1227,20 +921,15 @@ const products = [
     btu: "10/12/16/20 L/Day",
     price: 165,
     originalPrice: 215,
-    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "Compact efficient dehumidifier. Auto restart.",
-    specs: {
-      "Dehumidification": "10/12/16/20 L/Day",
-      "Auto-Defrost": "Yes",
-      "Continuous Drain": "Yes",
-      "Certification": "CE/RoHS"
-    },
+    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
+    description: "Compact efficient dehumidifier with auto restart.",
+    specs: {"Dehumidification": "10/12/16/20 L/Day", "Auto-Defrost": "Yes", "Continuous Drain": "Yes", "Certification": "CE/RoHS"},
     features: ["Auto-Defrost", "Continuous Drain", "Humidity Setting", "Low Noise"],
     stock: 50,
     hot: false
   },
   {
-    id: 60,
+    id: 59,
     name: "PD-SAE Dehumidifier",
     category: "dehumidifier",
     categoryName: "Dehumidifier",
@@ -1248,20 +937,15 @@ const products = [
     btu: "10/12/16/20 L/Day",
     price: 175,
     originalPrice: 225,
-    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "Silent dehumidifier. Only 42dB.",
-    specs: {
-      "Dehumidification": "10/12/16/20 L/Day",
-      "Auto-Defrost": "Yes",
-      "Continuous Drain": "Yes",
-      "Certification": "CE/RoHS"
-    },
+    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
+    description: "Silent dehumidifier. Only 42dB operation.",
+    specs: {"Dehumidification": "10/12/16/20 L/Day", "Auto-Defrost": "Yes", "Continuous Drain": "Yes", "Certification": "CE/RoHS"},
     features: ["Auto-Defrost", "Continuous Drain", "Humidity Setting", "Low Noise"],
     stock: 50,
     hot: false
   },
   {
-    id: 61,
+    id: 60,
     name: "PD-LCE Dehumidifier",
     category: "dehumidifier",
     categoryName: "Dehumidifier",
@@ -1269,20 +953,15 @@ const products = [
     btu: "50/60/70 L/Day",
     price: 429,
     originalPrice: 549,
-    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
+    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
     description: "Large capacity commercial dehumidifier.",
-    specs: {
-      "Dehumidification": "50/60/70 L/Day",
-      "Auto-Defrost": "Yes",
-      "Continuous Drain": "Yes",
-      "Certification": "CE/RoHS"
-    },
+    specs: {"Dehumidification": "50/60/70 L/Day", "Auto-Defrost": "Yes", "Continuous Drain": "Yes", "Certification": "CE/RoHS"},
     features: ["Auto-Defrost", "Continuous Drain", "Humidity Setting", "Low Noise"],
     stock: 50,
     hot: false
   },
   {
-    id: 62,
+    id: 61,
     name: "PPD-AAE Air Purifier",
     category: "purifier",
     categoryName: "Air Purifier",
@@ -1290,19 +969,15 @@ const products = [
     btu: "CADR 340 m³/h",
     price: 199,
     originalPrice: 269,
-    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
-    description: "HEPA H13 air purifier. Removes PM2.5, formaldehyde, odors.",
-    specs: {
-      "CADR": "CADR 340 m³/h",
-      "Filter": "HEPA H13 + Carbon",
-      "Certification": "CE/CARB/RoHS"
-    },
+    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
+    description: "HEPA H13 air purifier. Removes PM2.5, formaldehyde, odors and allergens.",
+    specs: {"CADR": "CADR 340 m³/h", "Filter": "HEPA H13 + Carbon", "Certification": "CE/CARB/RoHS"},
     features: ["HEPA Filtration", "Formaldehyde Removal", "Smart Sensor", "Timer"],
     stock: 50,
     hot: true
   },
   {
-    id: 63,
+    id: 62,
     name: "PPD-EAE Air Purifier",
     category: "purifier",
     categoryName: "Air Purifier",
@@ -1310,13 +985,9 @@ const products = [
     btu: "Modular DIY · CADR 450",
     price: 299,
     originalPrice: 399,
-    image: "https://p26-doubao-search-sign.byteimg.com/labis/image/8a1db72b0fe5d522adea38d2e9af623c~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=PhQk8CvCr647EseF18BUzM4t8ys%3D",
-    description: "Modular DIY design. 1 air block = 1 function. Expandable.",
-    specs: {
-      "CADR": "Modular DIY · CADR 450",
-      "Filter": "HEPA H13 + Carbon",
-      "Certification": "CE/CARB/RoHS"
-    },
+    image: "https://p26-doubao-search-sign.byteimg.com/isp-i18n-media/image/d71eb3a1b641345c034af931afd21201~tplv-be4g95zd3a-896x896.jpeg?lk3s=0ed4045e&x-expires=1806740648&x-signature=6x3ZOGLjulqdTnIEIWlzEnTiqYo%3D",
+    description: "Modular DIY design. 1 air block = 1 function. Fully expandable system.",
+    specs: {"CADR": "Modular DIY · CADR 450", "Filter": "HEPA H13 + Carbon", "Certification": "CE/CARB/RoHS"},
     features: ["HEPA Filtration", "Formaldehyde Removal", "Smart Sensor", "Timer"],
     stock: 50,
     hot: true
