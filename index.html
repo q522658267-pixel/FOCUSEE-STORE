@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focusee 便携空调商城 - 移动空调|除湿机|空气净化器</title>
+  <meta name="description" content="Focusee专业便携空调制造商，提供移动空调、除湿机、空气净化器等产品，免排热管设计，WiFi智能控制，全球认证。">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <span>📞 客服热线: 400-888-8888 | 📧 Marketing@focuseetech.com</span>
+        <span>全球发货 | 品质保证 | 7天无理由退换</span>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="container">
+        <a href="#" class="logo" onclick="navigateTo('home');return false;">
+          <div class="logo-icon">❄️</div>
+          <span>Focusee</span>
+        </a>
+        <nav class="nav">
+          <a href="#" data-page="home" class="active">首页</a>
+          <a href="#" data-page="products">全部产品</a>
+          <a href="#" onclick="currentCategory='air-conditioner';document.querySelectorAll('.category-tab').forEach(t=>t.classList.remove('active'));document.querySelector('[data-category=air-conditioner]').classList.add('active');renderProducts();navigateTo('products');return false;">便携空调</a>
+          <a href="#" onclick="currentCategory='dehumidifier';document.querySelectorAll('.category-tab').forEach(t=>t.classList.remove('active'));document.querySelector('[data-category=dehumidifier]').classList.add('active');renderProducts();navigateTo('products');return false;">除湿机</a>
+          <a href="#" onclick="currentCategory='purifier';document.querySelectorAll('.category-tab').forEach(t=>t.classList.remove('active'));document.querySelector('[data-category=purifier]').classList.add('active');renderProducts();navigateTo('products');return false;">空气净化器</a>
+        </nav>
+        <div class="header-actions">
+          <button class="cart-btn" id="cartBtn" title="购物车">
+            🛒
+            <span class="cart-count" id="cartCount" style="display:none;">0</span>
+          </button>
+          <button class="user-btn" id="userBtn">登录/注册</button>
+          <button class="user-btn" id="logoutBtn" style="display:none;">退出</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 首页 -->
+  <div class="page active" id="homePage">
+    <!-- Hero区域 -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>便携空调专家<br>清凉随你而动</h1>
+          <p>免排热管设计 · WiFi智能控制 · 全球认证<br>从1000BTU露营款到24000BTU商用款，一站式满足您的制冷需求</p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary" onclick="navigateTo('products')">立即选购 →</button>
+            <button class="btn btn-outline" onclick="navigateTo('products')">查看全部产品</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1631545806609-24c3be9667a2?w=500&h=500&fit=crop" alt="便携空调" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22><rect fill=%22%23ffffff%22 width=%22200%22 height=%22200%22/><text x=%22100%22 y=%22110%22 text-anchor=%22middle%22 fill=%22%231a73e8%22 font-size=%2280%22>❄️</text></svg>'">
+        </div>
+      </div>
+    </section>
+
+    <!-- 特性区域 -->
+    <section class="features">
+      <div class="container">
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🚫</div>
+            <h3>免排热管</h3>
+            <p>无需安装，即插即用，移动便捷</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📱</div>
+            <h3>WiFi智能控制</h3>
+            <p>Tuya生态，手机APP远程操控</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌍</div>
+            <h3>全球认证</h3>
+            <p>CE/GS/ETL/ROHS，出口80+国家</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌿</div>
+            <h3>环保冷媒</h3>
+            <p>R290/R32低GWP制冷剂，节能高效</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 热门产品 -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>热门产品</h2>
+          <p>精选热销产品，品质保障，限时优惠</p>
+        </div>
+        <div class="products-grid" id="hotProducts">
+          <!-- 由JS渲染 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 产品分类 -->
+    <section class="section" style="background:var(--secondary-color);">
+      <div class="container">
+        <div class="section-header">
+          <h2>产品分类</h2>
+          <p>三大产品线，满足不同场景需求</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card" style="cursor:pointer;" onclick="currentCategory='air-conditioner';document.querySelectorAll('.category-tab').forEach(t=>t.classList.remove('active'));document.querySelector('[data-category=air-conditioner]').classList.add('active');renderProducts();navigateTo('products');">
+            <div class="feature-icon">❄️</div>
+            <h3>便携空调</h3>
+            <p>1000-24000BTU，家用/商用/露营</p>
+          </div>
+          <div class="feature-card" style="cursor:pointer;" onclick="currentCategory='dehumidifier';document.querySelectorAll('.category-tab').forEach(t=>t.classList.remove('active'));document.querySelector('[data-category=dehumidifier]').classList.add('active');renderProducts();navigateTo('products');">
+            <div class="feature-icon">💧</div>
+            <h3>除湿机</h3>
+            <p>10-50L/天，自动除霜，连续排水</p>
+          </div>
+          <div class="feature-card" style="cursor:pointer;" onclick="currentCategory='purifier';document.querySelectorAll('.category-tab').forEach(t=>t.classList.remove('active'));document.querySelector('[data-category=purifier]').classList.add('active');renderProducts();navigateTo('products');">
+            <div class="feature-icon">🌬️</div>
+            <h3>空气净化器</h3>
+            <p>HEPA过滤，除甲醛，高CADR值</p>
+          </div>
+          <div class="feature-card" style="cursor:pointer;" onclick="navigateTo('products');">
+            <div class="feature-icon">🏷️</div>
+            <h3>全部产品</h3>
+            <p>查看62+型号产品，一站式选购</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 产品列表页 -->
+  <div class="page" id="productsPage">
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>全部产品</h2>
+          <p>62+型号产品，满足您的各种需求</p>
+        </div>
+        <div class="category-tabs">
+          <button class="category-tab active" data-category="all">全部</button>
+          <button class="category-tab" data-category="air-conditioner">便携空调</button>
+          <button class="category-tab" data-category="dehumidifier">除湿机</button>
+          <button class="category-tab" data-category="purifier">空气净化器</button>
+        </div>
+        <div class="products-grid" id="productsGrid">
+          <!-- 由JS渲染 -->
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 产品详情页 -->
+  <div class="page" id="productPage">
+    <section class="product-detail">
+      <div class="container" id="productDetail">
+        <!-- 由JS渲染 -->
+      </div>
+    </section>
+  </div>
+
+  <!-- 结算页面 -->
+  <div class="page" id="checkoutPage">
+    <section class="checkout-section">
+      <div class="container">
+        <h2 style="margin-bottom:30px;">确认订单</h2>
+        <div class="checkout-grid">
+          <div class="checkout-form">
+            <form id="checkoutForm">
+              <h2 style="font-size:20px;margin-bottom:20px;">收货信息</h2>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>收货人姓名 *</label>
+                  <input type="text" id="checkoutName" required placeholder="请输入姓名">
+                </div>
+                <div class="form-group">
+                  <label>联系电话 *</label>
+                  <input type="tel" id="checkoutPhone" required placeholder="请输入手机号">
+                </div>
+              </div>
+              <div class="form-group">
+                <label>电子邮箱</label>
+                <input type="email" id="checkoutEmail" placeholder="用于接收订单通知">
+              </div>
+              <div class="form-group">
+                <label>收货地址 *</label>
+                <textarea id="checkoutAddress" rows="3" required placeholder="请输入详细收货地址"></textarea>
+              </div>
+              
+              <h2 style="font-size:20px;margin:30px 0 20px;">支付方式</h2>
+              <div class="payment-methods">
+                <label class="payment-method selected">
+                  <input type="radio" name="payment" value="wechat" checked>
+                  <span>💚 微信支付</span>
+                </label>
+                <label class="payment-method">
+                  <input type="radio" name="payment" value="alipay">
+                  <span>💙 支付宝</span>
+                </label>
+                <label class="payment-method">
+                  <input type="radio" name="payment" value="bank">
+                  <span>🏦 银行转账</span>
+                </label>
+                <label class="payment-method">
+                  <input type="radio" name="payment" value="cod">
+                  <span>📦 货到付款</span>
+                </label>
+              </div>
+              
+              <button type="submit" class="btn btn-blue" style="width:100%;justify-content:center;padding:15px;font-size:16px;">
+                提交订单
+              </button>
+            </form>
+          </div>
+          <div class="order-summary">
+            <h3>订单摘要</h3>
+            <div id="orderItems">
+              <!-- 由JS渲染 -->
+            </div>
+            <div class="order-total-row">
+              <span>合计</span>
+              <span class="price" id="orderTotal">¥0</span>
+            </div>
+            <p style="font-size:12px;color:var(--text-light);margin-top:15px;">
+              * 提交订单后，我们将在24小时内联系您确认订单详情
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 订单成功页面 -->
+  <div class="page" id="successPage">
+    <section class="section" style="text-align:center;padding:100px 0;">
+      <div class="container">
+        <div style="font-size:80px;margin-bottom:20px;">✅</div>
+        <h2 style="font-size:32px;margin-bottom:15px;">订单提交成功！</h2>
+        <p style="font-size:18px;color:var(--text-light);margin-bottom:10px;">订单号: <span id="orderNumber" style="font-weight:600;color:var(--primary-color);"></span></p>
+        <p style="font-size:18px;color:var(--text-light);margin-bottom:30px;">订单金额: <span id="orderTotalDisplay" style="font-weight:600;color:var(--danger-color);"></span></p>
+        <p style="color:var(--text-light);margin-bottom:40px;">我们将在24小时内联系您确认订单，请注意查收邮件或短信</p>
+        <div style="display:flex;gap:15px;justify-content:center;">
+          <button class="btn btn-blue" onclick="navigateTo('home')">返回首页</button>
+          <button class="btn btn-outline" style="border-color:var(--primary-color);color:var(--primary-color);" onclick="navigateTo('products')">继续购物</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 登录/注册页面 -->
+  <div class="page" id="authPage">
+    <section class="auth-section">
+      <div class="container">
+        <div class="auth-box">
+          <h2>欢迎来到 Focusee</h2>
+          <div class="auth-tabs">
+            <div class="auth-tab active" data-type="login">登录</div>
+            <div class="auth-tab" data-type="register">注册</div>
+          </div>
+          
+          <form id="loginForm" class="auth-form">
+            <div class="form-group">
+              <label>电子邮箱</label>
+              <input type="email" id="loginEmail" required placeholder="请输入邮箱">
+            </div>
+            <div class="form-group">
+              <label>密码</label>
+              <input type="password" id="loginPassword" required placeholder="请输入密码">
+            </div>
+            <button type="submit" class="btn btn-blue">登录</button>
+            <div class="auth-footer">
+              还没有账号？<a href="#" onclick="document.querySelector('[data-type=register]').click();return false;">立即注册</a>
+            </div>
+          </form>
+
+          <form id="registerForm" class="auth-form" style="display:none;">
+            <div class="form-group">
+              <label>姓名</label>
+              <input type="text" id="registerName" required placeholder="请输入姓名">
+            </div>
+            <div class="form-group">
+              <label>电子邮箱</label>
+              <input type="email" id="registerEmail" required placeholder="请输入邮箱">
+            </div>
+            <div class="form-group">
+              <label>密码</label>
+              <input type="password" id="registerPassword" required placeholder="请输入密码">
+            </div>
+            <div class="form-group">
+              <label>确认密码</label>
+              <input type="password" id="registerConfirmPassword" required placeholder="请再次输入密码">
+            </div>
+            <button type="submit" class="btn btn-blue">注册</button>
+            <div class="auth-footer">
+              已有账号？<a href="#" onclick="document.querySelector('[data-type=login]').click();return false;">立即登录</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- 购物车侧边栏 -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>购物车</h3>
+      <button class="cart-close" id="cartClose">×</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <!-- 由JS渲染 -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>合计:</span>
+        <span class="total-price" id="cartTotal">¥0</span>
+      </div>
+      <button class="btn-checkout" onclick="toggleCart();navigateTo('checkout');">去结算</button>
+    </div>
+  </div>
+
+  <!-- 通知提示 -->
+  <div class="toast" id="toast"></div>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>❄️ Focusee</h3>
+          <p>Focusee Company Limited是专业的便携空调制造商，专注于移动空调、除湿机、空气净化器的研发与生产。产品出口全球80+国家，通过CE/GS/ETL/ROHS等多项国际认证。</p>
+        </div>
+        <div class="footer-col">
+          <h4>产品中心</h4>
+          <ul>
+            <li><a href="#" onclick="currentCategory='air-conditioner';navigateTo('products');return false;">便携空调</a></li>
+            <li><a href="#" onclick="currentCategory='dehumidifier';navigateTo('products');return false;">除湿机</a></li>
+            <li><a href="#" onclick="currentCategory='purifier';navigateTo('products');return false;">空气净化器</a></li>
+            <li><a href="#" onclick="navigateTo('products');return false;">全部产品</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>客户服务</h4>
+          <ul>
+            <li><a href="#">配送说明</a></li>
+            <li><a href="#">退换货政策</a></li>
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">联系客服</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>联系我们</h4>
+          <ul>
+            <li>📧 Marketing@focuseetech.com</li>
+            <li>📞 +86 134 2565 1968</li>
+            <li>📍 中国广东省中山市</li>
+            <li>🕐 周一至周五 9:00-18:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Focusee Company Limited. All Rights Reserved. | 粤ICP备XXXXXXXX号</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+    // 渲染热门产品
+    document.addEventListener('DOMContentLoaded', function() {
+      const hotProducts = products.filter(p => p.hot);
+      document.getElementById('hotProducts').innerHTML = hotProducts.map(product => `
+        <div class="product-card">
+          <div class="product-image">
+            <span class="product-badge">热卖</span>
+            <img src="${product.image}" alt="${product.name}" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22><rect fill=%22%23f0f0f0%22 width=%22200%22 height=%22200%22/><text x=%22100%22 y=%22100%22 text-anchor=%22middle%22 fill=%22%23999%22 font-size=%2240%22>❄️</text></svg>'">
+          </div>
+          <div class="product-info">
+            <div class="product-category">${product.categoryName}</div>
+            <div class="product-name">${product.name}</div>
+            <div class="product-model">型号: ${product.model} | ${product.btu}</div>
+            <div class="product-price">
+              <span class="price-current">¥${product.price}</span>
+              <span class="price-original">¥${product.originalPrice}</span>
+            </div>
+            <div class="product-actions">
+              <button class="btn-add-cart" onclick="addToCart(${product.id})">加入购物车</button>
+              <button class="btn-detail" onclick="navigateTo('product', ${product.id})">详情</button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    });
+  </script>
+</body>
+</html>
