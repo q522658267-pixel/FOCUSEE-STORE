@@ -1,10 +1,10 @@
-// 电商网站应用逻辑
+// E-commerce site application logic
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 let currentUser = JSON.parse(localStorage.getItem('user')) || null;
 let currentCategory = 'all';
 let currentProduct = null;
 
-// 初始化
+// Initialize
 document.addEventListener('DOMContentLoaded', function() {
   renderProducts();
   renderCartCount();
@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
   setupEventListeners();
 });
 
-// 设置事件监听
+// Setup event listeners
 function setupEventListeners() {
-  // 导航点击
+  // Navigation clicks
   document.querySelectorAll('[data-page]').forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
@@ -23,12 +23,12 @@ function setupEventListeners() {
     });
   });
 
-  // 购物车按钮
+  // Cart buttons
   document.getElementById('cartBtn').addEventListener('click', toggleCart);
   document.getElementById('cartClose').addEventListener('click', toggleCart);
   document.getElementById('cartOverlay').addEventListener('click', toggleCart);
 
-  // 分类标签
+  // Category tabs
   document.querySelectorAll('.category-tab').forEach(tab => {
     tab.addEventListener('click', () => {
       currentCategory = tab.getAttribute('data-category');
@@ -38,7 +38,7 @@ function setupEventListeners() {
     });
   });
 
-  // 登录/注册切换
+  // Login/Register toggle
   document.querySelectorAll('.auth-tab').forEach(tab => {
     tab.addEventListener('click', () => {
       document.querySelectorAll('.auth-tab').forEach(t => t.classList.remove('active'));
@@ -49,14 +49,14 @@ function setupEventListeners() {
     });
   });
 
-  // 登录表单
+  // Login form
   document.getElementById('loginForm').addEventListener('submit', handleLogin);
   document.getElementById('registerForm').addEventListener('submit', handleRegister);
 
-  // 结算表单
+  // Checkout form
   document.getElementById('checkoutForm').addEventListener('submit', handleCheckout);
 
-  // 支付方式选择
+  // Payment method selection
   document.querySelectorAll('.payment-method').forEach(method => {
     method.addEventListener('click', () => {
       document.querySelectorAll('.payment-method').forEach(m => m.classList.remove('selected'));
@@ -65,16 +65,16 @@ function setupEventListeners() {
     });
   });
 
-  // 退出登录
+  // Logout
   document.getElementById('logoutBtn').addEventListener('click', handleLogout);
 }
 
-// 页面导航
+// Page navigation
 function navigateTo(page, productId = null) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.getElementById(page + 'Page').classList.add('active');
   
-  // 更新导航激活状态
+  // Update nav active state
   document.querySelectorAll('.nav a').forEach(a => {
     a.classList.remove('active');
     if (a.getAttribute('data-page') === page) {
@@ -92,7 +92,7 @@ function navigateTo(page, productId = null) {
   window.scrollTo(0, 0);
 }
 
-// 渲染产品列表
+// Render product list
 function renderProducts() {
   const grid = document.getElementById('productsGrid');
   const filtered = currentCategory === 'all' 
@@ -102,27 +102,27 @@ function renderProducts() {
   grid.innerHTML = filtered.map(product => `
     <div class="product-card">
       <div class="product-image">
-        ${product.hot ? '<span class="product-badge">热卖</span>' : ''}
+        ${product.hot ? '<span class="product-badge">HOT</span>' : ''}
         <img src="${product.image}" alt="${product.name}" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22><rect fill=%22%23f0f0f0%22 width=%22200%22 height=%22200%22/><text x=%22100%22 y=%22100%22 text-anchor=%22middle%22 fill=%22%23999%22 font-size=%2240%22>❄️</text></svg>'">
       </div>
       <div class="product-info">
         <div class="product-category">${product.categoryName}</div>
         <div class="product-name">${product.name}</div>
-        <div class="product-model">型号: ${product.model} | ${product.btu}</div>
+        <div class="product-model">Model: ${product.model} | ${product.btu}</div>
         <div class="product-price">
-          <span class="price-current">¥${product.price}</span>
-          <span class="price-original">¥${product.originalPrice}</span>
+          <span class="price-current">$${product.price}</span>
+          <span class="price-original">$${product.originalPrice}</span>
         </div>
         <div class="product-actions">
-          <button class="btn-add-cart" onclick="addToCart(${product.id})">加入购物车</button>
-          <button class="btn-detail" onclick="navigateTo('product', ${product.id})">详情</button>
+          <button class="btn-add-cart" onclick="addToCart(${product.id})">Add to Cart</button>
+          <button class="btn-detail" onclick="navigateTo('product', ${product.id})">Details</button>
         </div>
       </div>
     </div>
   `).join('');
 }
 
-// 渲染产品详情
+// Render product detail
 function renderProductDetail(productId) {
   const product = products.find(p => p.id === productId);
   if (!product) return;
@@ -130,7 +130,7 @@ function renderProductDetail(productId) {
 
   document.getElementById('productDetail').innerHTML = `
     <div class="breadcrumb">
-      <a href="#" onclick="navigateTo('home');return false;">首页</a>
+      <a href="#" onclick="navigateTo('home');return false;">Home</a>
       <span>/</span>
       <a href="#" onclick="navigateTo('products');return false;">${product.categoryName}</a>
       <span>/</span>
@@ -142,20 +142,20 @@ function renderProductDetail(productId) {
       </div>
       <div class="product-detail-info">
         <h1>${product.name}</h1>
-        <div class="product-detail-model">型号: ${product.model} | ${product.btu} | 库存: ${product.stock}件</div>
+        <div class="product-detail-model">Model: ${product.model} | ${product.btu} | Stock: ${product.stock} pcs</div>
         <div class="product-detail-price">
-          <span class="price-current">¥${product.price}</span>
-          <span class="price-original">¥${product.originalPrice}</span>
+          <span class="price-current">$${product.price}</span>
+          <span class="price-original">$${product.originalPrice}</span>
         </div>
         <div class="product-detail-desc">${product.description}</div>
         <div class="product-features">
-          <h3>产品特点</h3>
+          <h3>Features</h3>
           <div class="feature-tags">
             ${product.features.map(f => `<span class="feature-tag">${f}</span>`).join('')}
           </div>
         </div>
         <div class="quantity-selector">
-          <label>数量:</label>
+          <label>Quantity:</label>
           <div class="quantity-control">
             <button onclick="changeQuantity(-1)">-</button>
             <input type="number" id="quantity" value="1" min="1" max="${product.stock}">
@@ -163,13 +163,13 @@ function renderProductDetail(productId) {
           </div>
         </div>
         <div class="detail-actions">
-          <button class="btn btn-blue" onclick="addToCartFromDetail()">加入购物车</button>
-          <button class="btn btn-primary" style="background:var(--danger-color);color:#fff;" onclick="buyNow()">立即购买</button>
+          <button class="btn btn-blue" onclick="addToCartFromDetail()">Add to Cart</button>
+          <button class="btn btn-primary" style="background:var(--danger-color);color:#fff;" onclick="buyNow()">Buy Now</button>
         </div>
       </div>
     </div>
     <div class="specs-section">
-      <h2>规格参数</h2>
+      <h2>Specifications</h2>
       <table class="specs-table">
         ${Object.entries(product.specs).map(([key, value]) => `
           <tr><td>${key}</td><td>${value}</td></tr>
@@ -179,7 +179,7 @@ function renderProductDetail(productId) {
   `;
 }
 
-// 数量调整
+// Quantity adjustment
 function changeQuantity(delta) {
   const input = document.getElementById('quantity');
   let value = parseInt(input.value) + delta;
@@ -187,20 +187,20 @@ function changeQuantity(delta) {
   input.value = value;
 }
 
-// 从详情页加入购物车
+// Add to cart from detail page
 function addToCartFromDetail() {
   const quantity = parseInt(document.getElementById('quantity').value);
   addToCart(currentProduct.id, quantity);
 }
 
-// 立即购买
+// Buy now
 function buyNow() {
   const quantity = parseInt(document.getElementById('quantity').value);
   addToCart(currentProduct.id, quantity, false);
   navigateTo('checkout');
 }
 
-// 加入购物车
+// Add to cart
 function addToCart(productId, quantity = 1, showToast = true) {
   const product = products.find(p => p.id === productId);
   if (!product) return;
@@ -223,11 +223,11 @@ function addToCart(productId, quantity = 1, showToast = true) {
   renderCartCount();
   
   if (showToast) {
-    showToastMessage('已加入购物车');
+    showToastMessage('Added to cart');
   }
 }
 
-// 从购物车移除
+// Remove from cart
 function removeFromCart(productId) {
   cart = cart.filter(item => item.id !== productId);
   saveCart();
@@ -235,7 +235,7 @@ function removeFromCart(productId) {
   renderCartCount();
 }
 
-// 更新购物车数量
+// Update cart quantity
 function updateCartQuantity(productId, delta) {
   const item = cart.find(i => i.id === productId);
   if (item) {
@@ -250,12 +250,12 @@ function updateCartQuantity(productId, delta) {
   }
 }
 
-// 保存购物车
+// Save cart
 function saveCart() {
   localStorage.setItem('cart', JSON.stringify(cart));
 }
 
-// 渲染购物车
+// Render cart
 function renderCart() {
   const container = document.getElementById('cartItems');
   
@@ -263,8 +263,8 @@ function renderCart() {
     container.innerHTML = `
       <div class="cart-empty">
         <div class="cart-empty-icon">🛒</div>
-        <p>购物车是空的</p>
-        <p style="font-size:13px;margin-top:10px;">快去挑选心仪的产品吧</p>
+        <p>Your cart is empty</p>
+        <p style="font-size:13px;margin-top:10px;">Start shopping now</p>
       </div>
     `;
   } else {
@@ -275,7 +275,7 @@ function renderCart() {
         </div>
         <div class="cart-item-info">
           <div class="cart-item-name">${item.name}</div>
-          <div class="cart-item-price">¥${item.price}</div>
+          <div class="cart-item-price">$${item.price}</div>
           <div class="cart-item-quantity">
             <button onclick="updateCartQuantity(${item.id}, -1)">-</button>
             <span>${item.quantity}</span>
@@ -288,55 +288,55 @@ function renderCart() {
   }
 
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-  document.getElementById('cartTotal').textContent = '¥' + total;
+  document.getElementById('cartTotal').textContent = '$' + total;
 }
 
-// 渲染购物车数量
+// Render cart count
 function renderCartCount() {
   const count = cart.reduce((sum, item) => sum + item.quantity, 0);
   document.getElementById('cartCount').textContent = count;
   document.getElementById('cartCount').style.display = count > 0 ? 'flex' : 'none';
 }
 
-// 切换购物车侧边栏
+// Toggle cart sidebar
 function toggleCart() {
   document.getElementById('cartSidebar').classList.toggle('open');
   document.getElementById('cartOverlay').classList.toggle('open');
   renderCart();
 }
 
-// 渲染结算页面
+// Render checkout page
 function renderCheckout() {
   const itemsContainer = document.getElementById('orderItems');
   const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
   
   if (cart.length === 0) {
-    itemsContainer.innerHTML = '<p style="color:var(--text-light);">购物车为空</p>';
-    document.getElementById('orderTotal').textContent = '¥0';
+    itemsContainer.innerHTML = '<p style="color:var(--text-light);">Cart is empty</p>';
+    document.getElementById('orderTotal').textContent = '$0';
     return;
   }
 
   itemsContainer.innerHTML = cart.map(item => `
     <div class="order-item">
       <span>${item.name} × ${item.quantity}</span>
-      <span>¥${item.price * item.quantity}</span>
+      <span>$${item.price * item.quantity}</span>
     </div>
   `).join('');
   
-  document.getElementById('orderTotal').textContent = '¥' + total;
+  document.getElementById('orderTotal').textContent = '$' + total;
 }
 
-// 处理结算
+// Handle checkout
 function handleCheckout(e) {
   e.preventDefault();
   
   if (cart.length === 0) {
-    showToastMessage('购物车为空，请先添加商品');
+    showToastMessage('Cart is empty, please add products first');
     return;
   }
 
   if (!currentUser) {
-    showToastMessage('请先登录');
+    showToastMessage('Please login first');
     navigateTo('auth');
     return;
   }
@@ -353,36 +353,36 @@ function handleCheckout(e) {
       email: document.getElementById('checkoutEmail').value
     },
     payment: document.querySelector('input[name="payment"]:checked').value,
-    status: '待发货',
+    status: 'Pending',
     date: new Date().toLocaleString()
   };
 
-  // 保存订单
+  // Save order
   const orders = JSON.parse(localStorage.getItem('orders')) || [];
   orders.push(order);
   localStorage.setItem('orders', JSON.stringify(orders));
 
-  // 清空购物车
+  // Clear cart
   cart = [];
   saveCart();
   renderCartCount();
 
-  // 显示成功页面
+  // Show success page
   document.getElementById('checkoutPage').classList.remove('active');
   document.getElementById('successPage').classList.add('active');
   document.getElementById('orderNumber').textContent = order.id;
-  document.getElementById('orderTotalDisplay').textContent = '¥' + total;
+  document.getElementById('orderTotalDisplay').textContent = '$' + total;
   
   window.scrollTo(0, 0);
 }
 
-// 处理登录
+// Handle login
 function handleLogin(e) {
   e.preventDefault();
   const email = document.getElementById('loginEmail').value;
   const password = document.getElementById('loginPassword').value;
   
-  // 简单验证（实际项目应连接后端）
+  // Simple validation (real project should connect to backend)
   const users = JSON.parse(localStorage.getItem('users')) || [];
   const user = users.find(u => u.email === email && u.password === password);
   
@@ -390,19 +390,19 @@ function handleLogin(e) {
     currentUser = { name: user.name, email: user.email };
     localStorage.setItem('user', JSON.stringify(currentUser));
     updateUserUI();
-    showToastMessage('登录成功');
+    showToastMessage('Login successful');
     navigateTo('home');
   } else {
-    // 如果没有注册用户，允许直接登录（演示用）
+    // If no registered user, allow direct login (demo)
     currentUser = { name: email.split('@')[0], email: email };
     localStorage.setItem('user', JSON.stringify(currentUser));
     updateUserUI();
-    showToastMessage('登录成功');
+    showToastMessage('Login successful');
     navigateTo('home');
   }
 }
 
-// 处理注册
+// Handle register
 function handleRegister(e) {
   e.preventDefault();
   const name = document.getElementById('registerName').value;
@@ -411,13 +411,13 @@ function handleRegister(e) {
   const confirmPassword = document.getElementById('registerConfirmPassword').value;
 
   if (password !== confirmPassword) {
-    showToastMessage('两次密码不一致');
+    showToastMessage('Passwords do not match');
     return;
   }
 
   const users = JSON.parse(localStorage.getItem('users')) || [];
   if (users.find(u => u.email === email)) {
-    showToastMessage('该邮箱已注册');
+    showToastMessage('This email is already registered');
     return;
   }
 
@@ -427,36 +427,36 @@ function handleRegister(e) {
   currentUser = { name, email };
   localStorage.setItem('user', JSON.stringify(currentUser));
   updateUserUI();
-  showToastMessage('注册成功');
+  showToastMessage('Registration successful');
   navigateTo('home');
 }
 
-// 退出登录
+// Handle logout
 function handleLogout() {
   currentUser = null;
   localStorage.removeItem('user');
   updateUserUI();
-  showToastMessage('已退出登录');
+  showToastMessage('Logged out');
   navigateTo('home');
 }
 
-// 更新用户界面
+// Update user UI
 function updateUserUI() {
   const userBtn = document.getElementById('userBtn');
   const logoutBtn = document.getElementById('logoutBtn');
   
   if (currentUser) {
     userBtn.textContent = currentUser.name;
-    userBtn.onclick = () => showToastMessage('欢迎回来，' + currentUser.name);
+    userBtn.onclick = () => showToastMessage('Welcome back, ' + currentUser.name);
     logoutBtn.style.display = 'inline-block';
   } else {
-    userBtn.textContent = '登录/注册';
+    userBtn.textContent = 'Login/Register';
     userBtn.onclick = () => navigateTo('auth');
     logoutBtn.style.display = 'none';
   }
 }
 
-// 显示提示消息
+// Show toast message
 function showToastMessage(message) {
   const toast = document.getElementById('toast');
   toast.textContent = message;
